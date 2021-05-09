@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Click Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+</head>
+<body style="color: azure;font-family: 'Changa', sans-serif;">
+    <nav class="navbar">
+        <span class="navbar-brand mb-0 h1">customClickEngine</span>
+      </nav>
+      <div class="typingAnimation" id="typingAnimation"><p class="line-1 anim-typewriter">This code is purely written in HTML,CSS and Javascript.....</p></div>
+     <div id="pageSource"></div>
+    <div id="customMenu">
+        <div class="item">
+            <a id="reloadPage">Reload Page</a>
+        </div>
+        <div class="item">
+            <a id="viewSource">View Source</a>
+        </div>
+        <div class="item">
+            <a href="" download="index.html">Save Page</a>
+        </div>
+        <div class="item">
+            <a id="exit" onclick="Exit()" target="_blank">Exit</a>
+        </div>
+    </div>
+    <script>
+        function Exit() {
+           var x=confirm('Are You sure want to exit:');
+           if(x) window.close();
+         }
+      </script>
+    <script src="./script.js"></script>
+</body>
+</html>

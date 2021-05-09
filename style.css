@@ -1,0 +1,109 @@
+#customMenu{
+    display: none;
+    width: 150px;
+    padding: 10px 0px;
+    background-color: rgb(14, 8, 8);
+    position: absolute;
+    transform-origin: top left;
+    animation: menuOpen 0.3s;
+}
+
+/* Animations */
+@keyframes menuOpen{
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+@keyframes menuClose{
+    from {transform: scale(1);}
+    to {transform: scale(0);}
+}
+@keyframes bgcolor {
+    0% {
+        background-color: #26113b
+    }
+    30% {
+        background-color: #3c1c5c
+    }
+    60% {
+        background-color: #f35
+    }
+    90% {
+        background-color: #3c1c5c
+    }
+    100% {
+        background-color: #a74fff
+    }
+}
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes navColor{
+    0% {
+        background-color: #b164ff;
+        color: black;
+    }
+    30% {
+        background-color: #cb97ff
+    }
+    60% {
+        background-color: rgb(51, 10, 17)
+    }
+    90% {
+        background-color: #000000;
+        color: white;
+    }
+    100% {
+        background-color: #ffffff
+    }
+}
+.navbar{
+    -webkit-animation: navColor 20s infinite;
+    animation: navColor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+a{
+   color: azure;
+   text-decoration: none;
+}
+.item{
+    padding:2px 15px;
+}
+.item:hover{
+    background-color: rgb(37, 37, 37);
+    font-weight: bold;
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+.typingAnimation{
+    position: relative;
+    top: 280px;
+}
